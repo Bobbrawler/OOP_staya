@@ -18,7 +18,7 @@ class Passport {
     Passport();
 
     // Конструктор
-    explicit Passport(QString fullName, QString address, QString openingDate, QString artisticDirection);
+    explicit Passport(QString fullName, QString number, QString issueDate, QString birthDate);
 
     // Конструктор копирования
     Passport(const Passport &selectedRecord);
@@ -44,28 +44,16 @@ class Passport {
     // Оператор приведения к типу bool
     explicit operator bool();
 
-    // Установка имени
+    // Установка свойств объекта
     void setFullName(QString nameValue);
-
-    // Получение имени
-    const QString &getFullName();
-
-    // Установка адреса
     void setNumber(QString AddressValue);
-
-    // Получение адреса
-    const QString &getNumber();
-
-    // Установка даты открытия
     void setIssueDate(QString openingDateValue);
-
-    // Получение даты открытия
-    const QString &getIssueDate();
-
-    // Установка художественного руководства
     void setBirthDate(QString artisticDirectionValue);
 
-    // Получение художественного руководства
+    // Получение свойств объекта
+    const QString &getFullName();
+    const QString &getNumber();
+    const QString &getIssueDate();
     const QString &getBirthDate();
 
     friend void swap(Passport &firstRecord, Passport &secondRecord) noexcept;

@@ -127,17 +127,13 @@ debug/qrc_resources.cpp: ../../resources.qrc \
 		../../icons/merge.png \
 		../../icons/exit.png \
 		../../icons/clear.png \
-		../../icons/adress_field.png \
 		../../icons/save.png \
 		../../icons/open.png \
 		../../icons/save_as.png \
-		../../icons/name_field.png \
 		../../icons/add.png \
 		../../icons/about.png \
 		../../icons/edit.png \
 		../../icons/main_icon.png \
-		../../icons/artistic_direction_field.png \
-		../../icons/opening_date_field.png \
 		../../icons/show_data.png
 	C:\Qt\6.7.3\mingw_64\bin\rcc.exe -name resources --no-zstd ..\..\resources.qrc -o debug\qrc_resources.cpp
 
